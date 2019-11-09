@@ -22,7 +22,11 @@
 
 
 <script>
-  import abc from '../components/abc'
+
+  import abc from '../components/abc';
+  import Peanut  from 'peanut-js';
+  import FF from './fun'
+
 export default {
   data() {
     return {
@@ -34,8 +38,10 @@ export default {
   },
   components:{
     abc
-  },
+  }, 
   mounted() {
+    
+    console.log(Peanut.setStorage('adsa','aa'),'QQ')
     this.$set(this.arr, 0, 1234);
     this.arr.splice(0, 1, 12345);
     this.items.filter(item => item.match(/a/));

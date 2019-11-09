@@ -25,6 +25,16 @@ export default new Router({
       component: () => import(/* webpackChunkName: "test" */ './views/Test.vue'),
     },
     {
+      path: '/award',
+      name: 'award',
+      component: () => import(/* webpackChunkName: "test" */ './views/Award.vue'),
+    },
+    {
+      path: '/element',
+      name: 'element',
+      component: () => import(/* webpackChunkName: "test" */ './views/Element.vue'),
+    },
+    {
       path: '/jsx',
       name: 'jsx',
       component: () => import(/* webpackChunkName: "jsx" */ './views/Jsx.vue'),
